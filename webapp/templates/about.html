@@ -1,0 +1,30 @@
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	// Title if else similar in 2 different tempelates so lets make it as one with inheritane using layout.html
+
+	
+	{% if title %}
+		<title>Flask Blog - {{ title }} </title>
+	{% else %}
+		<title>Flask Blog</title>
+	{% endif %}
+	
+</head>
+<body>
+	<h1>About page</h1>
+</body>
+</html>
+
+-->
+
+<!-- Using block content for inheritence -->
+
+{% extends "layout.html" %}
+{% block content %}
+	<h1>About page</h1>
+{% endblock content %}
